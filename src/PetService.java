@@ -24,13 +24,4 @@ class PetService {
     public double calculateFee(String emergencyType) {
         return 200.0;
     }
-
-    public static void main(String[] args) {
-        PetService service = new PetService();
-
-        System.out.println("Basic checkup: $" + service.calculateFee());
-        System.out.println("Checkup with vaccination: $" + service.calculateFee(true));
-        System.out.println("Full service: $" + service.calculateFee(true, true));
-        System.out.println("Emergency: $" + service.calculateFee("emergency"));
-    }
 }
