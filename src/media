@@ -80,6 +80,27 @@ class DVD extends Media {
     }
 }
 
+class Magazine extends Media {
+    private int issueNumber;
+
+    public Magazine(String title, String itemID, int issueNumber) {
+        super(title, itemID);
+
+        this.issueNumber = issueNumber;
+    }
+
+    @Override
+    public String getMediaType() {
+        return "Magazine";
+    }
+
+    @Override
+    public void displayInfo() {
+        System.out.println("Magazine: \"" + title + "\" Issue #" + issueNumber + " (ID: " + itemID + ")");
+    }
+}
+
+
 
 
 
